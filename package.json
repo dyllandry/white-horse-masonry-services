@@ -4,8 +4,13 @@
   "description": "Static site for white horse masonry services.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "npx gulp clean"
   },
   "author": "Dylan Landry",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.0",
+    "rimraf": "^2.6.3"
+  }
 }
