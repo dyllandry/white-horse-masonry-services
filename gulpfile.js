@@ -26,7 +26,7 @@ function _watch () {
 }
 
 function css () {
-  return src(`${stylesDir}/*.scss`)
+  return src(`${stylesDir}/**/*.scss`)
     .pipe(sass().on(`error`, sass.logError))
     .pipe(dest(`${buildDir}/styles`))
 }

@@ -1,3 +1,5 @@
+@import './partials/media-queries';
+
 .content {
   height: 100vh;
   padding-top: 25px;
@@ -10,13 +12,48 @@
 .free-estimate--title {
   background-color: red;
   display: inline-block;
-  padding: 5px;
+  padding: 10px 20px;
 }
 
 .free-estimate--title, .free-estimate--body {
   background-color: #ff2929;
 }
 
+.free-estimate--form {
+  padding: 20px 20px 20px 20px;
+  @media #{$small} {
+    padding-top: 0px;
+  }
+}
+
+.free-estimate--form label {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: top;
+  text-align: right;
+  width: 100px;
+  margin-top: 5px;
+  @media #{$small} {
+    text-align: left;
+    margin-bottom: 5px;
+  }
+}
+
 .free-estimate--form input, .free-estimate--form textarea {
-  display: block;
+  font-size: 18px;
+  width: 275px;
+  padding-left: 5px;
+  box-sizing: border-box;
+  @media #{$small} {
+    width: 100%;
+  }
+}
+
+.free-estimate--form input {
+  margin-bottom: 10px;
+  height: 25px;
+}
+
+.free-estimate--form textarea {
+  height: 200px;
 }

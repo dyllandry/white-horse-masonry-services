@@ -1,3 +1,9 @@
+@import './partials/media-queries';
+
+header {
+  overflow: hidden;
+}
+
 .header--bg {
   background-image: url("../images/dscf1043_orig.jpg");
   filter: blur(4px);
@@ -13,16 +19,48 @@
   text-shadow: 0px 3px 7px black;
   position: relative;
   padding-top: 100px;
-  padding-bottom: 75px;
+  padding-bottom: 125px;
+  @media #{$small} {
+    padding-top: 50px;
+  }
 }
 
 .titles h1 {
   font-size: 60px;
-  margin: 10px 0;
+  margin: 0 0 -10px 0;
 }
 
 .titles--first {
   margin-bottom: 50px;
+  @media #{$small} {
+    margin-bottom: 75px;
+  }
+}
+
+.titles--first h1 {
+  @media #{$small} {
+    font-size: 36px;
+  }
+}
+
+.titles--second h1 {
+  @media #{$small} {
+    font-size: 55px;
+    margin: 0 0 -15px 0;
+  }
+}
+
+.titles--second .titles--mobile {
+  display: none;
+  @media #{$small} {
+    display: block;
+  }
+}
+
+.titles--second .titles--desktop {
+  @media #{$small} {
+    display: none;
+  }
 }
 
 .image-strips {
@@ -30,6 +68,12 @@
   top: 0;
   margin-left: auto;
   width: 250px + 175px + 35px;
+  @media #{$medium} {
+    width: 260px;
+  }
+  @media #{$small} {
+    width: 220px;
+  }
 }
 
 .image-strips--wide, .image-strips--skinny {
@@ -47,6 +91,13 @@
   height: 100vh;
   top: -10px;
   box-shadow: 0px 0px 10px -1px;
+  @media #{$medium} {
+    transform: rotate(3deg);
+    filter: brightness(86%);
+  }
+  @media #{$small} {
+    top: -40px;
+  }
 }
 
 .image-strips--wide img {
@@ -59,6 +110,9 @@
   height: 100vh;
   box-shadow: 0px 0px 10px -1px;
   transform: rotate(3deg);
+  @media #{$medium} {
+    display: none;
+  }
 }
 
 .image-strips--skinny img {

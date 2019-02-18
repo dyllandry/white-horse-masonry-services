@@ -23,7 +23,9 @@ header
         h1 MASTERWORK
         h1 MASONRY
       .titles--second
-        h1 WHITE HORSE
+        h1.titles--desktop WHITE HORSE
+        h1.titles--mobile WHITE
+        h1.titles--mobile HORSE
         h1 MASONRY
 article.content
   .width-limiter
@@ -31,6 +33,14 @@ article.content
       .free-estimate--title Free Estimate
       .free-estimate--body
         .free-estimate--form
-          input(type=`text`)
-          input(type=`email`)
-          textarea
+          label(for=`name`) Name:
+          input(id=`name` type=`text` placeholder=`John Doe`)
+          br
+          label(for=`email`) Email:
+          input(id=`email` type=`email` placeholder=`john@doe.com`)
+          br
+          label(for=`telephone`) Telephone:
+          input(id=`telephone` type=`tel` placeholder=`123-456-7890`)
+          br
+          label(for=`message`) Message:
+          textarea(id=`message`)
