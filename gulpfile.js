@@ -1,16 +1,26 @@
-const { src, dest } = require('gulp')
+const { src, dest, watch } = require('gulp')
 const rimraf = require('rimraf')
 const pug = require('gulp-pug')
 
 const buildDir = `${__dirname}/public`
 const pagesDir = `${__dirname}/pages`
 
-exports.clean = function (cb) {
+function clean (cb) {
   rimraf(`${buildDir}/**`, cb)
 }
 
-exports.template = function () {
+function template () {
   return src(`${pagesDir}/*.pug`)
     .pipe(pug())
     .pipe(dest(buildDir))
+}
+
+function _watch () {
+  watch(`${pagesDir}/*.pug`, template)
+}
+
+module.exports = {
+  template,
+  watch: _watch,
+  clean,
 }
