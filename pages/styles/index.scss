@@ -1,11 +1,10 @@
+@import './header';
+@import './content';
+
 body {
   margin: 0;
   font-family: helvetica, arial, sans-serif;
-  background-color: red;
-}
-
-header {
-  background-color: red;
+  background-color: black;
 }
 
 .width-limiter {
@@ -15,64 +14,6 @@ header {
   padding: 0 25px;
 }
 
-.titles {
-  padding-top: 100px;
-  padding-bottom: 75px;
-}
-
-.titles h1 {
-  font-size: 50px;
-  margin: 10px 0;
-}
-
-.titles--first {
-  margin-bottom: 50px;
-}
-
-.content {
-  height: 100vh;
-  position: relative;
-  z-index: 0;
-  background-color: white;
-  box-shadow: 0 0 11px -2px;
-}
-
-.image-strips {
-  position: relative;
-  top: 0;
-  margin-left: auto;
-  width: 250px + 175px + 15px;
-}
-
-.image-strips--wide, .image-strips--skinny {
-  position: absolute;
-  background-color: white;
-}
-
-.image-strips--wide img, .image-strips--skinny img {
-  display: block;
-  box-sizing: border-box;
-  padding: 2.5px 5px;
-}
-
-.image-strips--wide {
-  height: 100vh;
-  top: -50px;
-  box-shadow: 0px 0px 10px -1px;
-}
-
-.image-strips--wide img {
-  width: 250px;
-}
-
-.image-strips--skinny {
-  top: -17px;
-  margin-left: 260px;
-  height: 100vh;
-  box-shadow: 0px 0px 10px -1px;
-  transform: rotate(3deg);
-}
-
-.image-strips--skinny img {
-  width: 175px;
+div {
+  font-size: 18px;
 }

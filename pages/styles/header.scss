@@ -1,0 +1,66 @@
+.header--bg {
+  background-image: url("../images/dscf1043_orig.jpg");
+  filter: blur(4px);
+  height: 545px;
+  background-size: cover;
+  position: absolute;
+  width: 100vw;
+  background-position: center;
+}
+
+.titles {
+  color: white;
+  text-shadow: 0px 3px 7px black;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 75px;
+}
+
+.titles h1 {
+  font-size: 60px;
+  margin: 10px 0;
+}
+
+.titles--first {
+  margin-bottom: 50px;
+}
+
+.image-strips {
+  position: relative;
+  top: 0;
+  margin-left: auto;
+  width: 250px + 175px + 35px;
+}
+
+.image-strips--wide, .image-strips--skinny {
+  position: absolute;
+  background-color: white;
+}
+
+.image-strips--wide img, .image-strips--skinny img {
+  display: block;
+  box-sizing: border-box;
+  padding: 2.5px 5px;
+}
+
+.image-strips--wide {
+  height: 100vh;
+  top: -10px;
+  box-shadow: 0px 0px 10px -1px;
+}
+
+.image-strips--wide img {
+  width: 250px;
+}
+
+.image-strips--skinny {
+  top: -17px;
+  margin-left: 269px;
+  height: 100vh;
+  box-shadow: 0px 0px 10px -1px;
+  transform: rotate(3deg);
+}
+
+.image-strips--skinny img {
+  width: 175px;
+}

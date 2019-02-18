@@ -1,0 +1,22 @@
+.content {
+  height: 100vh;
+  padding-top: 25px;
+  position: relative;
+  z-index: 0;
+  background-color: white;
+  box-shadow: 0 0 11px -2px;
+}
+
+.free-estimate--title {
+  background-color: red;
+  display: inline-block;
+  padding: 5px;
+}
+
+.free-estimate--title, .free-estimate--body {
+  background-color: #ff2929;
+}
+
+.free-estimate--form input, .free-estimate--form textarea {
+  display: block;
+}
