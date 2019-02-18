@@ -1,0 +1,11 @@
+{
+  "name": "whms-static",
+  "version": "1.0.0",
+  "description": "Static site for white horse masonry services.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dylan Landry",
+  "license": "ISC"
+}
