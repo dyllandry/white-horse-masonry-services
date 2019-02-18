@@ -2,10 +2,12 @@ const { src, dest, watch, parallel, series } = require('gulp')
 const rimraf = require('rimraf')
 const pug = require('gulp-pug')
 const sass = require('gulp-sass')
+const imagemin = require('gulp-imagemin')
 
 const buildDir = `${__dirname}/public`
 const pagesDir = `${__dirname}/pages`
 const stylesDir = `${__dirname}/pages/styles`
+const imagesDir = `${__dirname}/pages/images`
 
 function clean (cb) {
   rimraf(`${buildDir}/**`, cb)
@@ -20,6 +22,7 @@ function template () {
 function _watch () {
   watch(`${pagesDir}/*.pug`, template)
   watch(`${stylesDir}/*.scss`, css)
+  watch(`${imagesDir}/*`, images)
 }
 
 function css () {
@@ -29,7 +32,15 @@ function css () {
 }
 
 function build(cb) {
-  return series(clean, parallel(css, template))(cb)
+  return series(clean,
+    parallel(css, template, images)
+  )(cb)
+}
+
+function images () {
+  return src(`${imagesDir}/*`)
+    .pipe(imagemin())
+    .pipe(dest(`${buildDir}/images`))
 }
 
 

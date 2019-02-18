@@ -16,8 +16,8 @@ header {
 }
 
 .titles {
-  padding-top: 75px;
-  padding-bottom: 50px;
+  padding-top: 100px;
+  padding-bottom: 75px;
 }
 
 .titles h1 {
@@ -49,17 +49,30 @@ header {
   background-color: white;
 }
 
+.image-strips--wide img, .image-strips--skinny img {
+  display: block;
+  box-sizing: border-box;
+  padding: 2.5px 5px;
+}
+
 .image-strips--wide {
-  width: 250px;
   height: 100vh;
+  top: -50px;
   box-shadow: 0px 0px 10px -1px;
 }
 
+.image-strips--wide img {
+  width: 250px;
+}
+
 .image-strips--skinny {
-  top: -6px;
-  width: 175px;
-  margin-left: 250px + 15px;
+  top: -17px;
+  margin-left: 260px;
   height: 100vh;
   box-shadow: 0px 0px 10px -1px;
   transform: rotate(3deg);
+}
+
+.image-strips--skinny img {
+  width: 175px;
 }
