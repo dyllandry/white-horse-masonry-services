@@ -1,5 +1,6 @@
 @import './header';
 @import './content';
+@import './partials/media-queries';
 
 body {
   margin: 0;
@@ -14,6 +15,8 @@ body {
   padding: 0 25px;
 }
 
-div {
-  font-size: 18px;
+div,
+p
+{
+  font-size: 21px;
 }

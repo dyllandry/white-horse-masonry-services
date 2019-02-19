@@ -78,6 +78,7 @@ header {
 }
 
 .image-strips--wide, .image-strips--skinny {
+  height: 125vh;
   position: absolute;
   background-color: white;
 }
@@ -89,11 +90,12 @@ header {
 }
 
 .image-strips--wide {
-  height: 100vh;
   top: -10px;
   box-shadow: 0px 0px 10px -1px;
   @media #{$medium} {
     transform: rotate(3deg);
+  }
+  @media only screen and (max-width: 738px) {
     filter: brightness(75%);
   }
   @media #{$small} {
@@ -108,7 +110,6 @@ header {
 .image-strips--skinny {
   top: -17px;
   margin-left: 269px;
-  height: 100vh;
   box-shadow: 0px 0px 10px -1px;
   transform: rotate(3deg);
   @media #{$medium} {
