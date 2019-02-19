@@ -22,6 +22,7 @@ header {
   padding-bottom: 125px;
   @media #{$small} {
     padding-top: 50px;
+    padding-bottom: 75px;
   }
 }
 
@@ -93,10 +94,10 @@ header {
   box-shadow: 0px 0px 10px -1px;
   @media #{$medium} {
     transform: rotate(3deg);
-    filter: brightness(86%);
+    filter: brightness(75%);
   }
   @media #{$small} {
-    top: -40px;
+    top: -75px;
   }
 }
 
