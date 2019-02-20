@@ -21,12 +21,12 @@ function template () {
 
 function _watch () {
   watch(`${pagesDir}/*.pug`, template)
-  watch(`${stylesDir}/*.scss`, css)
+  watch(`${stylesDir}/**/*.scss`, css)
   watch(`${imagesDir}/*`, images)
 }
 
 function css () {
-  return src(`${stylesDir}/**/*.scss`)
+  return src(`${stylesDir}/*.scss`)
     .pipe(sass().on(`error`, sass.logError))
     .pipe(dest(`${buildDir}/styles`))
 }
