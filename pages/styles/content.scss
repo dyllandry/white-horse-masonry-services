@@ -9,3 +9,105 @@ $media-tile-single-column: "only screen and (max-width: 765px)";
   background-color: white;
   box-shadow: 0 0 11px -2px;
 }
+
+.free-estimate {
+  padding: 0 20px;
+  margin-top: 25px;
+  @media only screen and (max-width: 700px) {
+    max-width: 370px;
+    margin: 0px auto 0 auto;
+  }
+}
+
+.free-estimate h2 {
+  margin: 10px 0 0 0;
+}
+
+.free-estimate--limit {
+  font-size: 18px;
+  font-style: italic;
+  margin: 0 0 15px 0!important;
+  padding: 0!important;
+}
+
+.email-form {
+  width: 100%;
+}
+
+.email-form input {
+  height: 30px;
+}
+
+.email-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.email-form input, .email-form textarea {
+  padding-left: 5px;
+  font-size: 18px;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 0 2px 0 inset;
+}
+
+.email-form textarea {
+  height: 150px;
+  resize: none;
+  padding-top: 5px;
+}
+
+.email-form button {
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  height: 30px;
+  font-size: 18px;
+  border: hsla(217, 100%, 36%, 1) 1px solid;
+  background-color: #1e76ff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  @media only screen and (max-width: 700px) {
+    margin-bottom: 0px;
+  }
+  &:hover {
+    background-color: hsla(217, 100%, 66%, 1);
+  }
+}
+
+.or {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+address {
+  text-align: left;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+  @media only screen and (max-width: 700px) {
+    text-align: center;
+  }
+}
+
+address a {
+  color: black;
+  text-decoration: none;
+  font-style: normal;
+  font-size: 21px;
+  &:hover {
+    text-decoration: underline;
+  }
+  display: block;
+  margin-bottom: 15px;
+}
+
+address .telephone {
+  font-size: 32px;
+}

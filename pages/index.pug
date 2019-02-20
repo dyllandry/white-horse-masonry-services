@@ -30,24 +30,42 @@ header
 article.content
   .width-limiter.p-0
     .tiles
-      .tile.width-3
+      .tile.width-4.center
         p #[strong Over 30 years...]#[br]of experience building, planning, and consulting to
           |  ensure a job well done.
-      .tile.width-3
+      .tile.width-4.center
         p #[strong Expressive...]#[br]and aesthetic landscapes to complete your home, business, or public place.
-      .tile.width-3
+      .tile.width-4.center
         p #[strong Reliability...]#[br]to recreate your vision with the knowledge
           |  necessary to integrate any material or design.
     .tiles
-      .tile.width-3
+      .tile.width-4
         .image-container
           img(src=`images/016_orig.jpg`)
-      .tile.width-3
+      .tile.width-4
         .image-container
           img(src=`images/img-1047_orig.jpg`)
-      .tile.width-3
+      .tile.width-4
         .image-container
           img(src=`images/1615956_orig.jpg`)
+  .width-limiter.p-0
+    .free-estimate
+      .tiles
+        .tile.width-5.column
+          h2 Free Estimate
+          p.free-estimate--limit *Limited to York County, Ontario
+          .email-form
+            label(for=`email`) Your Email Address:
+            input(id=`email` type=`email` required placeholder=`john@gmail.com`)
+            label(for=`message`) Your Message:
+            textarea(id=`message` required placeholder=`Write your message here.`)
+            button(type=`submit`) Send
+        .tile.width-2
+          .or #[strong or]
+        .tile.width-5.center
+          address
+            a(href=`mailto:donlandry48@gmail.com`) donlandry48@gmail.com
+            a.telephone(href=`tel:+416-659-4843`) +416-659-4843
         // p #[strong Over 30 years] of professional experience building with a
         //   |  variety of materials,
         //   |  and planning expressive landscapes for homes, businesses,

@@ -1,6 +1,7 @@
 .tiles {
   display: flex;
   justify-content: space-between;
+  justify-content: center;
   @media only screen and (max-width: 700px) {
     flex-direction: column;
     align-items: center;
@@ -9,7 +10,6 @@
 
 .tile {
   display: flex;
-  justify-content: center;
   align-items: flex-start;
   flex: 1 1 auto;
   margin: 20px 0 0 0;
@@ -36,13 +36,20 @@
   }
 }
 
+.tile.column {
+  flex-direction: column;
+}
+
 .tile .image-container {
-  width: 100%;
   box-sizing: border-box;
   padding: 0 20px;
   margin: 0;
   @media only screen and (max-width: 700px) {
     padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
   }
 }
 
@@ -50,15 +57,28 @@
   max-width: 270px;
   padding: 10px 20px;
   margin: 0;
+  justify-self: center;
   @media only screen and (max-width: 700px) {
     max-width: 370px;
   }
+}
+
+.tile.center {
+  justify-content: center;
 }
 
 .tile strong {
   font-size: 23px;
 }
 
-.tile.width-3 {
+.tile.width-4 {
   width: 33.3%;
+}
+
+.tile.width-5 {
+  width: 41.6%;
+}
+
+.tile.width-2 {
+  width: 16.6%;
 }
