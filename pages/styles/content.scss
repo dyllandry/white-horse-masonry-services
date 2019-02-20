@@ -14,7 +14,7 @@ $media-tile-single-column: "only screen and (max-width: 765px)";
   display: flex;
   padding: 25px 0 0 0;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   @media #{$media-tile-single-column} {
     flex-wrap: wrap;
     justify-content: center;
@@ -41,9 +41,9 @@ $media-tile-single-column: "only screen and (max-width: 765px)";
 }
 
 p.tile {
-  font-size: 30px;
+  font-size: 26px;
   flex-grow: 0.2;
-  line-height: 41px;
+  line-height: 38px;
   @media #{$media-tile-single-column} {
     font-size: 21px;
     line-height: 32px;
@@ -65,7 +65,7 @@ img.tile {
   padding: 15px;
   box-shadow: 0px 0px 5px 0px black;
   min-width: 0;
-  flex-grow: 0.75;
+  flex-grow: 0.40;
   @media #{$small} {
     width: 100vw;
     min-width: auto;
