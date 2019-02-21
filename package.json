@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "npx gulp clean",
     "build": "npx gulp build",
-    "watch": "npx gulp watch"
+    "watch": "npx gulp watch",
+    "serve": "npx http-server"
   },
   "author": "Dylan Landry",
   "license": "ISC",
@@ -16,6 +17,7 @@
     "gulp-imagemin": "^5.0.3",
     "gulp-pug": "^4.0.1",
     "gulp-sass": "^4.0.2",
+    "http-server": "^0.11.1",
     "rimraf": "^2.6.3"
   }
 }
