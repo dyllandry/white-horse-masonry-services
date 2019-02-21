@@ -3,7 +3,6 @@ html
 head
   meta(charset='utf-8')
   meta(name='viewport' content='width=device-width, initial-scale=1')
-  link(href='styles/index.css' rel=`stylesheet`)
   title White Horse Masonry
 body
 header
@@ -11,13 +10,13 @@ header
   .width-limiter
     .image-strips
       .image-strips--wide
-        img(src="images/wide_1.jpg")
-        img(src="images/wide_2.jpg")
-        img(src="images/wide_3.jpg")
+        img(src=require("./images/wide_1.jpg"))
+        img(src=require("./images/wide_2.jpg"))
+        img(src=require("./images/wide_3.jpg"))
       .image-strips--skinny
-        img(src="images/skinny_1.jpg")
-        img(src="images/skinny_2.jpeg")
-        img(src="images/skinny_3.jpg")
+        img(src=require("./images/skinny_1.jpg"))
+        img(src=require("./images/skinny_2.jpeg"))
+        img(src=require("./images/skinny_3.jpg"))
     .titles
       .titles--first
         h1 MASTERWORK
@@ -41,13 +40,13 @@ article.content
     .tiles
       .tile.width-4
         .image-container
-          img(src=`images/016_orig.jpg`)
+          img(src=require(`./images/016_orig.jpg`))
       .tile.width-4
         .image-container
-          img(src=`images/img-1047_orig.jpg`)
+          img(src=require(`./images/img-1047_orig.jpg`))
       .tile.width-4
         .image-container
-          img(src=`images/1615956_orig.jpg`)
+          img(src=require(`./images/1615956_orig.jpg`))
   .width-limiter.p-0
     .free-estimate
       .tiles

@@ -5,10 +5,10 @@ header {
 }
 
 .header--bg {
-  background-image: url("../images/dscf1043_orig.jpg");
   filter: blur(4px);
   height: 545px;
   background-size: cover;
+  background-image: url('../images/dscf1043_orig.jpg');
   position: absolute;
   width: 100vw;
   background-position: center;

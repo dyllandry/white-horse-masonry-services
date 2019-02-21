@@ -1,0 +1,101 @@
+header {
+  overflow: hidden; }
+
+.header--bg {
+  background-image: url("../images/dscf1043_orig.jpg");
+  filter: blur(4px);
+  height: 545px;
+  background-size: cover;
+  position: absolute;
+  width: 100vw;
+  background-position: center; }
+
+.titles {
+  color: white;
+  text-shadow: 0px 3px 7px black;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 125px; }
+  @media only screen and (max-width: 500px) {
+    .titles {
+      padding-top: 50px;
+      padding-bottom: 75px; } }
+
+.titles h1 {
+  font-size: 60px;
+  margin: 0 0 -10px 0; }
+
+.titles--first {
+  margin-bottom: 50px; }
+  @media only screen and (max-width: 500px) {
+    .titles--first {
+      margin-bottom: 75px; } }
+
+@media only screen and (max-width: 500px) {
+  .titles--first h1 {
+    font-size: 36px; } }
+
+@media only screen and (max-width: 500px) {
+  .titles--second h1 {
+    font-size: 55px;
+    margin: 0 0 -15px 0; } }
+
+.titles--second .titles--mobile {
+  display: none; }
+  @media only screen and (max-width: 500px) {
+    .titles--second .titles--mobile {
+      display: block; } }
+
+@media only screen and (max-width: 500px) {
+  .titles--second .titles--desktop {
+    display: none; } }
+
+.image-strips {
+  position: relative;
+  top: 0;
+  margin-left: auto;
+  width: 460px; }
+  @media only screen and (max-width: 800px) {
+    .image-strips {
+      width: 260px; } }
+  @media only screen and (max-width: 500px) {
+    .image-strips {
+      width: 220px; } }
+
+.image-strips--wide, .image-strips--skinny {
+  height: 125vh;
+  position: absolute;
+  background-color: white; }
+
+.image-strips--wide img, .image-strips--skinny img {
+  display: block;
+  box-sizing: border-box;
+  padding: 2.5px 5px; }
+
+.image-strips--wide {
+  top: -10px;
+  box-shadow: 0px 0px 10px -1px; }
+  @media only screen and (max-width: 800px) {
+    .image-strips--wide {
+      transform: rotate(3deg); } }
+  @media only screen and (max-width: 738px) {
+    .image-strips--wide {
+      filter: brightness(75%); } }
+  @media only screen and (max-width: 500px) {
+    .image-strips--wide {
+      top: -75px; } }
+
+.image-strips--wide img {
+  width: 250px; }
+
+.image-strips--skinny {
+  top: -17px;
+  margin-left: 269px;
+  box-shadow: 0px 0px 10px -1px;
+  transform: rotate(3deg); }
+  @media only screen and (max-width: 800px) {
+    .image-strips--skinny {
+      display: none; } }
+
+.image-strips--skinny img {
+  width: 175px; }
