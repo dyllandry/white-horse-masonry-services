@@ -63,10 +63,7 @@ function images () {
 }
 
 module.exports = {
-  template,
   watch: series(build, _watch),
   clean,
-  css,
-  build,
-  eslint: _eslint
+  build
 }
