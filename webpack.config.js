@@ -1,5 +1,6 @@
 const path = require(`path`)
 const HtmlWebpackPlugin = require(`html-webpack-plugin`)
+const ImageminPlugin = require(`imagemin-webpack-plugin`).default
 
 module.exports = {
   mode: `development`,
@@ -13,7 +14,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: `./src/pages/home.pug`
-    })
+    }),
+    new ImageminPlugin({test: /\.(png|jpg|jpeg)$/})
   ],
   module: {
     rules: [
@@ -39,8 +41,16 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|jp(e*)g)$/,
-        loader: `file-loader`
+        test: /\.(png|jp(e*)g|gif)$/,
+        use: {
+          loader: 'responsive-loader',
+          options: {
+            sizes: [300],
+            placeholder: true,
+            placeholderSize: 25,
+            name: 'images/[name]-[width].[ext]'
+          }
+        }
       }
     ]
   }
