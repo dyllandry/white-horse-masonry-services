@@ -1,13 +1,13 @@
 # Todo
-- Lazyload large images
-- Load smaller images (srcset pictures)
-- add address tags
+- add paragraph about where 'we' were prior to Toronto
+- polyfill flex-box (flexibility) on tiles
 - google seo
-- make header height a function of vh (weird on landscape phones)
+  - add address tags
 - add alt tags to all images
-- polyfill flex-box (flexibility) On what?..
-- safari doesn't support intersectionobserver
-- background image goes black when hd src set. Use two divs
 - whitehorse, somewhere
 - text line-height a little squished on firefox
-- lazyload image sometimes flash in on firefox
+- collapse series of three tile images into one manual slideshow on mobile
+- lazyload
+  - lazyload image sometimes flash in on firefox
+  - background image goes black when hd src set. Use two divs
+- add 'free-estimate' tag overlapping header and content sections
