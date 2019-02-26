@@ -45,7 +45,7 @@ module.exports = {
         use: {
           loader: 'responsive-loader',
           options: {
-            sizes: [300],
+            sizes: [400, 600, 800],
             placeholder: true,
             placeholderSize: 25,
             name: 'images/[name]-[width].[ext]'

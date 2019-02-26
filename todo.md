@@ -5,4 +5,7 @@
 - google seo
 - make header height a function of vh (weird on landscape phones)
 - add alt tags to all images
-- polyfill flex-box (flexibility)
+- polyfill flex-box (flexibility) On what?..
+- safari doesn't support intersectionobserver
+- background image goes black when hd src set. Use two divs
+- whitehorse, somewhere
