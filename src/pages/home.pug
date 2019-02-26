@@ -45,56 +45,60 @@ header
         h1.titles--mobile HORSE
         h1 MASONRY
 article.content
-  .width-limiter.p-0
-    .tiles
-      .tile.width-4.center
-        p #[strong Over 30 years...]#[br]of experience building, planning, and consulting to
-          |  ensure a job well done.
-      .tile.width-4.center
-        p #[strong Expressive...]#[br]and aesthetic landscapes to complete your home, business, or public place.
-      .tile.width-4.center
-        p #[strong Reliability...]#[br]to recreate your vision with the knowledge
-          |  necessary to integrate any material or design.
-    .tiles
-      .tile.width-4
-        .image-container
-          img.lazy(
-            src=require(`./images/016_orig.jpg`).placeholder
-            data-srcset=require(`./images/016_orig.jpg`).srcSet
-          )
-      .tile.width-4
-        .image-container
-          img.lazy(
-            src=require(`./images/img-1047_orig.jpg`).placeholder
-            data-srcset=require(`./images/img-1047_orig.jpg`).srcSet
-          )
-      .tile.width-4
-        .image-container
-          img.lazy(
-            src=require(`./images/1615956_orig.jpg`).placeholder
-            data-srcset=require(`./images/1615956_orig.jpg`).srcSet
-          )
-  .width-limiter.p-0
-    .free-estimate
+  section
+    .width-limiter.p-0
       .tiles
-        .tile.width-5.column
-          h2 Free Estimate
-          p.free-estimate--limit *Limited to York County, Ontario
-          form.email-form(action=`https://formspree.io/donlandry48@gmail.com` method=`POST`)
-            label(for=`email`) Your Email Address:
-            input(id=`email` type=`email` name=`_replyto` required placeholder=`Type your email address here.`)
-            label(for=`message`) Your Message:
-            textarea(id=`message` name=`message` required placeholder=`Write your message here.`)
-            input(type=`hidden` name=`_subject` value=`New Free Estimate Request`)
-            input.hidden(name=`_gotcha`)
-            button(type=`submit`) Send
-        .tile.width-2
-          .or #[strong or]
-        .tile.width-5.center
-          address
-            a(href=`mailto:donlandry48@gmail.com`) donlandry48@gmail.com
-            a.telephone(href=`tel:+416-659-4843`) +416-659-4843
-        // p #[strong Over 30 years] of professional experience building with a
-        //   |  variety of materials,
-        //   |  and planning expressive landscapes for homes, businesses,
-        //   |  and public places.
+        .tile.width-4.center
+          p #[strong Over 30 years...]#[br]of experience building, planning, and consulting to
+            |  ensure a job well done.
+        .tile.width-4.center
+          p #[strong Expressive...]#[br]and aesthetic landscapes to complete your home, business, or public place.
+        .tile.width-4.center
+          p #[strong Reliability...]#[br]to recreate your vision with the knowledge
+            |  necessary to integrate any material or design.
+      .tiles
+        .tile.width-4
+          .image-container
+            img.lazy(
+              src=require(`./images/016_orig.jpg`).placeholder
+              data-srcset=require(`./images/016_orig.jpg`).srcSet
+            )
+        .tile.width-4
+          .image-container
+            img.lazy(
+              src=require(`./images/img-1047_orig.jpg`).placeholder
+              data-srcset=require(`./images/img-1047_orig.jpg`).srcSet
+            )
+        .tile.width-4
+          .image-container
+            img.lazy(
+              src=require(`./images/1615956_orig.jpg`).placeholder
+              data-srcset=require(`./images/1615956_orig.jpg`).srcSet
+            )
+  section
+    .width-limiter
+      h2 Our History
+      p
+        | White Horse Masonry Services, previously known as Don Landry Masonry, has provided quality services to home owners and businesses for over 30 years. With our roots in New Hampshire, we eventually serviced all of New England.
+      p In 2016, we began to offer our services to the Greater Toronto Area. Our commitment is to guarantee quality, craftsmanship and customer satisfaction. We are an honest company with good people and master masons.
+  section
+    .width-limiter.p-0
+      .free-estimate
+        .tiles
+          .tile.width-5.column
+            h2 Free Estimate
+            p.free-estimate--limit *Limited to York County, Ontario
+            form.email-form(action=`https://formspree.io/donlandry48@gmail.com` method=`POST`)
+              label(for=`email`) Your Email Address:
+              input(id=`email` type=`email` name=`_replyto` required placeholder=`Type your email address here.`)
+              label(for=`message`) Your Message:
+              textarea(id=`message` name=`message` required placeholder=`Write your message here.`)
+              input(type=`hidden` name=`_subject` value=`New Free Estimate Request`)
+              input.hidden(name=`_gotcha`)
+              button(type=`submit`) Send
+          .tile.width-2
+            .or #[strong or]
+          .tile.width-5.center
+            address
+              a(href=`mailto:donlandry48@gmail.com`) donlandry48@gmail.com
+              a.telephone(href=`tel:+416-659-4843`) +416-659-4843

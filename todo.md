@@ -1,6 +1,6 @@
 # Todo
-- add paragraph about where 'we' were prior to Toronto
 - polyfill flex-box (flexibility) on tiles
+- fix horizontal spacing
 - google seo
   - add address tags
 - add alt tags to all images
