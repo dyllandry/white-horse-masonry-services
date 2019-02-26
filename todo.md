@@ -11,3 +11,4 @@
   - lazyload image sometimes flash in on firefox
   - background image goes black when hd src set. Use two divs
 - add 'free-estimate' tag overlapping header and content sections
+- placeholder images appear a little bit bigger prior to lazyload

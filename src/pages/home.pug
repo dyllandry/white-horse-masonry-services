@@ -46,7 +46,7 @@ header
         h1 MASONRY
 article.content
   section
-    .width-limiter.p-0
+    .width-limiter
       .tiles
         .tile.width-4.center
           p #[strong Over 30 years...]#[br]of experience building, planning, and consulting to
@@ -56,7 +56,8 @@ article.content
         .tile.width-4.center
           p #[strong Reliability...]#[br]to recreate your vision with the knowledge
             |  necessary to integrate any material or design.
-      .tiles
+    .width-limiter.p-0
+      .tiles.row
         .tile.width-4
           .image-container
             img.lazy(
@@ -75,13 +76,13 @@ article.content
               src=require(`./images/1615956_orig.jpg`).placeholder
               data-srcset=require(`./images/1615956_orig.jpg`).srcSet
             )
-  section
+  section.row
     .width-limiter
       h2 Our History
       p
         | White Horse Masonry Services, previously known as Don Landry Masonry, has provided quality services to home owners and businesses for over 30 years. With our roots in New Hampshire, we eventually serviced all of New England.
       p In 2016, we began to offer our services to the Greater Toronto Area. Our commitment is to guarantee quality, craftsmanship and customer satisfaction. We are an honest company with good people and master masons.
-  section
+  section.row
     .width-limiter.p-0
       .free-estimate
         .tiles
