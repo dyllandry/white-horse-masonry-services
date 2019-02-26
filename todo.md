@@ -9,3 +9,5 @@
 - safari doesn't support intersectionobserver
 - background image goes black when hd src set. Use two divs
 - whitehorse, somewhere
+- text line-height a little squished on firefox
+- lazyload image sometimes flash in on firefox
