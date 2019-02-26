@@ -80,11 +80,13 @@ article.content
         .tile.width-5.column
           h2 Free Estimate
           p.free-estimate--limit *Limited to York County, Ontario
-          .email-form
+          form.email-form(action=`https://formspree.io/donlandry48@gmail.com` method=`POST`)
             label(for=`email`) Your Email Address:
-            input(id=`email` type=`email` required placeholder=`john@gmail.com`)
+            input(id=`email` type=`email` name=`_replyto` required placeholder=`Type your email address here.`)
             label(for=`message`) Your Message:
-            textarea(id=`message` required placeholder=`Write your message here.`)
+            textarea(id=`message` name=`message` required placeholder=`Write your message here.`)
+            input(type=`hidden` name=`_subject` value=`New Free Estimate Request`)
+            input.hidden(name=`_gotcha`)
             button(type=`submit`) Send
         .tile.width-2
           .or #[strong or]
