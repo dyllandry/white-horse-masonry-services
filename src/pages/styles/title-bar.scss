@@ -1,0 +1,52 @@
+@import './partials/media-queries';
+
+.title-bar {
+  height: 50px;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  box-shadow: 0 0 1px;
+  @media #{$small} {
+    display: none;
+  }
+}
+
+.title-bar-container {
+  height: 100%;
+}
+
+.title-bar {
+  &--title {
+    margin: 0;
+    padding: 5px 0;
+    font-weight: normal;
+    display: inline-block;
+  }
+}
+
+.free-estimates-link {
+  display: inline-block;
+  height: 100%;
+  float: right;
+  line-height: 50px;
+  font-size: 19px;
+}
+
+.free-estimates-link a {
+  color: black;
+  text-decoration: none;
+}
+
+.free-estimates-link {
+  &--text {
+    font-weight: bold;
+    margin-right: 10px;
+    // rotate animation?
+    @media only screen and (max-width: 660px) {
+      display: none;
+    }
+  }
+  &--phone {
+
+  }
+}

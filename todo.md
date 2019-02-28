@@ -1,14 +1,16 @@
 # Todo
-- polyfill flex-box (flexibility) on tiles
-- fix horizontal spacing
+- whitehorse, somewhere
 - google seo
   - add address tags
-- add alt tags to all images
-- whitehorse, somewhere
 - text line-height a little squished on firefox
-- collapse series of three tile images into one manual slideshow on mobile
+- polyfill flex-box (flexibility) on tiles
+- go single column a bit earlier
+  - Make text paragraphs a bit skinnier, more cubey.
+- fix html structure
+- add alt tags to all images
 - lazyload
   - lazyload image sometimes flash in on firefox
   - background image goes black when hd src set. Use two divs
+- collapse series of three tile images into one manual slideshow on mobile
 - add 'free-estimate' tag overlapping header and content sections
 - placeholder images appear a little bit bigger prior to lazyload
