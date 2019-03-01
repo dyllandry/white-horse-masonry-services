@@ -32,13 +32,14 @@
   font-size: 19px;
 }
 
-.free-estimates-link a {
+a.free-estimates-link {
   color: black;
   text-decoration: none;
 }
 
 .free-estimates-link {
   &--text {
+    color: black;
     font-weight: bold;
     margin-right: 10px;
     // rotate animation?
@@ -46,7 +47,9 @@
       display: none;
     }
   }
-  &--phone {
 
+  &--phone {
+    color: blue;
+    text-decoration: underline;
   }
 }

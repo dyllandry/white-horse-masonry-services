@@ -10,10 +10,9 @@ header
     .width-limiter.title-bar-container
       // Put this in a cool type-writer font?
       h1.title-bar--title White Horse Masonry
-      .free-estimates-link
-        a.telephone(href=`tel:+416-659-4843`)
-          span.free-estimates-link--text Free Estimates!
-          span.free-estimates-link--phone +416-659-4843
+      a.free-estimates-link(href=`tel:+416-659-4843`)
+        span.free-estimates-link--text Free Estimates!
+        span.free-estimates-link--phone +416-659-4843
   .header--bg.lazy-background-image(data-src=require('./images/header.jpg').src)
   .width-limiter
     .image-strips
@@ -108,6 +107,9 @@ article.content
           .tile.width-2
             .or #[strong or]
           .tile.width-5.center
-            address
-              a(href=`mailto:donlandry48@gmail.com`) donlandry48@gmail.com
-              a.telephone(href=`tel:+416-659-4843`) +416-659-4843
+            address.address
+              .address--vertical-flex
+                a.address--email(href=`mailto:donlandry48@gmail.com`) donlandry48@#[wbr]gmail.com
+                a.address--telephone(href=`tel:+416-659-4843`) +416-659-4843
+              .address--logo
+                img(src=require('./images/white-horse.jpg').src)

@@ -87,17 +87,33 @@ $media-tile-single-column: "only screen and (max-width: 765px)";
 }
 
 address {
-  text-align: left;
+  height: 125px;
   width: 100%;
   display: flex;
-  flex-direction: column;
   margin: auto 0;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 1px 5px -1px;
   @media only screen and (max-width: 700px) {
     text-align: center;
   }
 }
 
-address a {
+.address--vertical-flex {
+  display: flex;
+  height: 100%;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.address--email, .address--telephone {
+  display: block;
+  text-align: left;
+}
+
+.address--email {
   color: black;
   text-decoration: none;
   font-style: normal;
@@ -105,10 +121,32 @@ address a {
   &:hover {
     text-decoration: underline;
   }
-  display: block;
   margin-bottom: 15px;
 }
 
-address .telephone {
+.address--telephone {
   font-size: 32px;
+  @media only screen and (max-width: 875px) {
+    font-size: 24px;
+  }
+  white-space: nowrap;
+}
+
+a.address--telephone {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.address--logo {
+  height: 100%; 
+  min-width: 60px;
+  overflow: hidden;
+}
+
+
+.address--logo img {
+  box-shadow: none!important;
+  height: 100%;
+  width: auto;
 }
