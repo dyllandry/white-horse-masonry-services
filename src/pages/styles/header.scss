@@ -20,8 +20,8 @@ header {
   color: white;
   text-shadow: 0px 3px 7px black;
   position: relative;
-  padding-top: 50px;
-  padding-bottom: 175px;
+  padding-top: 100px;
+  padding-bottom: 125px;
   @media #{$small} {
     padding-top: 50px;
     padding-bottom: 75px;
@@ -47,8 +47,12 @@ header {
 }
 
 .titles--first h1 {
+  font-size: 40px;
   @media #{$small} {
     font-size: 36px;
+  }
+  @media #{$short} {
+    font-size: 30px;
   }
 }
 
@@ -109,6 +113,9 @@ header {
   @media #{$small} {
     top: -75px;
   }
+  @media #{$short} {
+    top: -140px;
+  }
 }
 
 .image-strips--wide img {
@@ -122,6 +129,9 @@ header {
   transform: rotate(3deg);
   @media #{$medium} {
     display: none;
+  }
+  @media #{$short} {
+    top: -197px;
   }
 }
 

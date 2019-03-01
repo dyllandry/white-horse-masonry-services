@@ -10,6 +10,9 @@ $media-tile-single-column: "only screen and (max-width: 765px)";
   padding-bottom: 1px;
   background-color: white;
   box-shadow: 0 0 11px -2px;
+  @media #{$short} {
+    padding-top: 20px;
+  }
 }
 
 .free-estimate {
