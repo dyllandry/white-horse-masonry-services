@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx webpack --mode=production",
     "build:dev": "npx webpack --mode=development",
-    "start:dev": "webpack-dev-server --mode=development"
+    "start:dev": "webpack-dev-server --mode=development",
+    "release": "git subtree push --prefix dist origin gh-pages"
   },
   "author": "Dylan Landry",
   "license": "ISC",
