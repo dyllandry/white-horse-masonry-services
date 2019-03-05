@@ -4,3 +4,5 @@ Checklist items taken from [Search Engine Optimization (SEO) Starter Guide](http
 Added title to home page "White Horse Masonry Services"
 ## Use the "description" meta tag
 Added description meta tag "Master stonemasons in Toronto, Canada, with specialization in turn-key construction and expertise in a variety of materials and aesthetics."
+## Use heading tags to emphasize important text
+Restructured headers to compose complete headers.
