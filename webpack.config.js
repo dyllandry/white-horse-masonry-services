@@ -1,6 +1,7 @@
 const path = require(`path`)
 const HtmlWebpackPlugin = require(`html-webpack-plugin`)
 const ImageminPlugin = require(`imagemin-webpack-plugin`).default
+const CopyPlugin = require(`copy-webpack-plugin`)
 
 module.exports = {
   mode: `development`,
@@ -15,7 +16,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: `./src/pages/home.pug`
     }),
-    new ImageminPlugin({test: /\.(png|jpg|jpeg)$/})
+    new ImageminPlugin({test: /\.(png|jpg|jpeg)$/}),
+    new CopyPlugin([
+      { from: `src/files-to-paste-in-dist/`, to: `./` }
+    ])
   ],
   module: {
     rules: [
