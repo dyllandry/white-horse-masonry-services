@@ -1,19 +1,7 @@
-doctype html
-html
-head
-  meta(charset='utf-8')
-  meta(name='viewport' content='width=device-width, initial-scale=1')
-  title White Horse Masonry
-  meta(name=`description` content=`Master stonemasons in Toronto, Canada, with specialization in turn-key construction and expertise in a variety of materials and aesthetics.`)
+include partials/head.pug
 body
 header
-  .title-bar
-    .width-limiter.title-bar-container
-      // Put this in a cool type-writer font?
-      h1.title-bar--title White Horse Masonry
-      a.free-estimates-link(href=`tel:+416-659-4843`)
-        span.free-estimates-link--text Free Estimates!
-        span.free-estimates-link--phone +416-659-4843
+  include partials/title-bar.pug
   .header--bg.lazy-background-image(data-src=require('./images/header.jpg').src)
   .width-limiter
     .image-strips
@@ -56,6 +44,7 @@ header
             span.titles--mobile HORSE
           span.titles--part MASONRY
 article.content
+  .home-header--spacer
   section
     .width-limiter
       .tiles
@@ -74,18 +63,24 @@ article.content
             img.lazy(
               src=require(`./images/016_orig.jpg`).placeholder
               data-srcset=require(`./images/016_orig.jpg`).srcSet
+              data-w=require(`./images/016_orig.jpg`).width
+              data-h=require(`./images/016_orig.jpg`).height
             )
         .tile.width-4
           .image-container
             img.lazy(
               src=require(`./images/img-1047_orig.jpg`).placeholder
               data-srcset=require(`./images/img-1047_orig.jpg`).srcSet
+              data-w=require(`./images/img-1047_orig.jpg`).width
+              data-h=require(`./images/img-1047_orig.jpg`).height
             )
         .tile.width-4
           .image-container
             img.lazy(
               src=require(`./images/1615956_orig.jpg`).placeholder
               data-srcset=require(`./images/1615956_orig.jpg`).srcSet
+              data-w=require(`./images/1615956_orig.jpg`).width
+              data-h=require(`./images/1615956_orig.jpg`).height
             )
   section.row
     .width-limiter
@@ -93,6 +88,13 @@ article.content
       p
         | White Horse Masonry Services, previously known as Don Landry Masonry, has provided quality services to home owners and businesses for over 30 years. With our roots in New Hampshire, we eventually serviced all of New England.
       p In 2016, we began to offer our services to the Greater Toronto Area. Our commitment is to guarantee quality, craftsmanship and customer satisfaction. We are an honest company with good people and master masons.
+  section.row
+    .width-limiter.width-limiter--image-gallery
+      .image-gallery.grid
+    .link-to-full-gallery
+      a.button-primary(href="/full-gallery.html")
+        span.view-gallery--icon ↪︎
+        | View Gallery
   section.row
     .width-limiter.p-0
       .free-estimate
@@ -107,7 +109,7 @@ article.content
               textarea(id=`message` name=`message` required placeholder=`Write your message here.`)
               input(type=`hidden` name=`_subject` value=`New Free Estimate Request`)
               input.hidden(name=`_gotcha`)
-              button(type=`submit`) Send
+              button.button-primary(type=`submit`) Send
           .tile.width-2
             .or #[strong or]
           .tile.width-5.center

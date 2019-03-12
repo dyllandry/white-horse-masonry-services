@@ -2,6 +2,7 @@
 @import './title-bar';
 @import './content';
 @import './partials/media-queries';
+@import './image-gallery';
 
 body {
   margin: 0;
@@ -38,4 +39,32 @@ p {
 
 h2 {
   margin-top: 0px;
+}
+
+.link-to-full-gallery {
+  width: 100%;
+  text-align: center;
+  margin-top: 75px;
+}
+
+.link-to-full-gallery a {
+  display: inline-block;
+  font-size: 28px;
+  position: relative;
+}
+
+.button-primary {
+  text-decoration: none;
+  font-size: 18px;
+  border: none;
+  background: none;
+  color: blue;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.view-gallery--icon {
+  position: absolute;
+  left: -39px;
 }

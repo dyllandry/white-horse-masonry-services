@@ -1,0 +1,17 @@
+.grid-container(style={
+  opacity: '0',
+  transition: `opacity 0.5s ease-in`
+})
+  .grid-sizer
+  for image in images
+    img.image-gallery--image.grid-item.pswp-image.lazy(
+      src=image.placeholder
+      data-src=image.src
+      data-srcset=image.srcSet
+      data-w=image.width
+      data-h=image.height
+      style={
+        width: image.width,
+        height: image.height
+      }
+    )

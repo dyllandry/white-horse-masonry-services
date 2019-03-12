@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx webpack --mode=production",
-    "build:dev": "npx webpack --mode=development",
-    "start:dev": "webpack-dev-server --mode=development",
+    "build": "npx webpack --config webpack.prod.js",
+    "start:dev": "webpack-dev-server",
     "release": "git subtree push --prefix dist origin gh-pages"
   },
   "author": "Dylan Landry",
@@ -21,7 +20,11 @@
     "html-webpack-plugin": "^3.2.0",
     "imagemin-webpack-plugin": "^2.4.2",
     "jimp": "^0.6.0",
+    "jquery": "^3.3.1",
+    "masonry-layout": "^4.2.2",
+    "mini-css-extract-plugin": "^0.5.0",
     "node-sass": "^4.11.0",
+    "photoswipe": "^4.1.3",
     "pug": "^2.0.3",
     "pug-loader": "^2.4.0",
     "responsive-loader": "^1.2.0",
@@ -30,7 +33,8 @@
     "url-loader": "^1.1.2",
     "webpack": "^4.29.5",
     "webpack-cli": "^3.2.3",
-    "webpack-dev-server": "^3.2.0"
+    "webpack-dev-server": "^3.2.0",
+    "webpack-merge": "^4.2.1"
   },
   "dependencies": {
     "lazysizes": "^4.1.6"

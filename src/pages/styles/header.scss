@@ -1,8 +1,16 @@
 @import './partials/media-queries';
 
 header {
+  padding-top: 50px;
   overflow: hidden;
   max-height: 80vh;
+  @media #{$extraShort} {
+    max-height: none;
+  }
+}
+
+.home-header--spacer {
+  padding-top: 50px;
 }
 
 .header--bg {
