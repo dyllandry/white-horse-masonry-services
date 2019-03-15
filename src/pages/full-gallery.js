@@ -4,7 +4,7 @@ import './styles/full-gallery.scss'
 import imageGallery from './scripts/image-gallery'
 
 const context = require.context(
-  './images/gallery-images/all/',
+  './images/gallery-images/home-gallery-images/',
   false,
   /\.(jpe?g|png)$/
 )
