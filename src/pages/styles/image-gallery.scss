@@ -1,0 +1,30 @@
+@import '../styles/partials/media-queries';
+
+.grid-sizer,
+.grid-item {
+  width: 100%;
+  @media #{$minExtraSmall} {
+    width: 50%;
+    // somehow get rid of parent padding/margin
+  }
+  @media #{$minMedium} {
+    width: 33%;
+  }
+  @media #{$minLarge} {
+    width: 25%;
+  }
+}
+
+.grid-item {
+  box-sizing: border-box;
+  padding: 5px;
+  @media #{$extraSmall} {
+    padding: 10px;
+  }
+}
+
+.width-limiter--image-gallery {
+  @media #{$extraSmall} {
+    padding: 0!important;
+  }
+}

@@ -7,7 +7,8 @@ const CleanPlugin = require(`clean-webpack-plugin`)
 module.exports = {
   mode: `development`,
   entry: {
-    home: `./src/pages/home.js`
+    home: `./src/pages/home.js`,
+    fullGallery: `./src/pages/full-gallery.js`
   },
   output: {
     path: path.resolve(__dirname, `dist`),
@@ -15,6 +16,15 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      chunks: ['fullGallery'],
+      filename: './full-gallery.html',
+      template: `./src/pages/full-gallery.pug`,
+      title: 'White Horse Masonry — Gallery'
+    }),
+    new HtmlWebpackPlugin({
+      chunks: ['home'],
+      filename: './index.html',
+      title: 'White Horse Masonry',
       template: `./src/pages/home.pug`
     }),
     new ImageminPlugin({test: /\.(png|jpg|jpeg)$/}),
@@ -28,6 +38,10 @@ module.exports = {
       {
         test: /\.pug$/,
         use: [`pug-loader`]
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
       },
       {
         test: /\.scss$/,
@@ -47,11 +61,15 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|jp(e*)g|gif)$/,
+        test: /\.(gif|svg)$/,
+        use: `url-loader`
+      },
+      {
+        test: /\.(png|jp(e*)g)$/,
         use: {
           loader: 'responsive-loader',
           options: {
-            sizes: [400, 600, 800],
+            sizes: [400, 600, 800, 1200],
             placeholder: true,
             placeholderSize: 25,
             name: 'images/[name]-[width].[ext]'

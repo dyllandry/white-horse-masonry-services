@@ -2,17 +2,30 @@
 
 .title-bar {
   height: 50px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
   z-index: 1;
   background-color: white;
-  box-shadow: 0 0 1px;
-  @media #{$small} {
-    display: none;
-  }
+  box-shadow: 0px 1px 3px -1px;
 }
 
 .title-bar-container {
   height: 100%;
+}
+
+a.title-bar--home, a.title-bar--gallery {
+  color: black;
+  text-decoration: none;
+  font-size: 19px;
+  line-height: 50px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+a.title-bar--home {
+  margin-right: 15px;
 }
 
 .title-bar {
@@ -44,13 +57,12 @@ a.free-estimates-link {
     font-weight: bold;
     margin-right: 10px;
     // rotate animation?
-    @media only screen and (max-width: 660px) {
+    @media only screen and (max-width: 465px) {
       display: none;
     }
   }
 
   &--phone {
     color: blue;
-    text-decoration: underline;
   }
 }
