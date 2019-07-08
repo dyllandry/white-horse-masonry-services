@@ -1,11 +1,15 @@
 # White Horse Masonry Services Static Site Generator
-This is a freelance project by [Dylan Landry](https://github.com/dyllandry) to create a website for White Horse Masonry Services. The website is a client facing site with service benefits, contact information, and a gallery showcasing the company's past work.
+This is a freelance project by [Dylan Landry](https://www.dylanlandry.com) to create a website for White Horse Masonry Services. The website is a client facing site with service benefits, contact information, and a gallery showcasing the company's past work.
 
 This project is part of Dylan Landry's portfolio, and the code can be found on the [project's GitHub repository](https://github.com/dyllandry/white-horse-masonry-services).
 
-*Whenever intructed to execute shell commands, this readme assumes you've navigated to this project's directory using your system's shell.*
+![A screen shot of the white horse masonry website home page.](screen-shot.png)
+![A screen shot of the white horse masonry website galleryq page.](screen-shot-gallery.png)
 
 ## Install
+
+*Whenever intructed to execute shell commands, this readme assumes you've navigated to this project's directory using your system's shell.*
+
 **This Project requires Node version 11.10.0 due to a dependency's incompatability with new Node versions.**
 1. Install [Node.js version 11.10.0](https://nodejs.org/en/) for your system.
 1. Navigate to this directory using a shell
