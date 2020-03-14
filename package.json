@@ -16,7 +16,7 @@
   },
   "engineStrict": true,
   "devDependencies": {
-    "acorn": "^6.1.0",
+    "acorn": "^6.4.1",
     "clean-webpack-plugin": "^2.0.0",
     "copy-webpack-plugin": "^5.0.0",
     "css-loader": "^2.1.0",
