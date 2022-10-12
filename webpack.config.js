@@ -19,12 +19,12 @@ module.exports = {
       chunks: ['fullGallery'],
       filename: './full-gallery.html',
       template: `./src/pages/full-gallery.pug`,
-      title: 'White Horse Masonry — Gallery'
+      title: 'Landry Masonry — Gallery'
     }),
     new HtmlWebpackPlugin({
       chunks: ['home'],
       filename: './index.html',
-      title: 'White Horse Masonry',
+      title: 'Landry Masonry',
       template: `./src/pages/home.pug`
     }),
     new ImageminPlugin({test: /\.(png|jpg|jpeg)$/}),

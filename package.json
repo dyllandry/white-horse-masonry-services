@@ -1,7 +1,7 @@
 {
   "name": "whms-static",
   "version": "1.0.0",
-  "description": "Static site for white horse masonry services.",
+  "description": "Static site for landry masonry services.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

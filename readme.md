@@ -1,10 +1,10 @@
-# White Horse Masonry Services Static Site Generator
-This is a freelance project by [Dylan Landry](https://www.dylanlandry.com) to create a website for White Horse Masonry Services. The website is a client facing site with service benefits, contact information, and a gallery showcasing the company's past work.
+# Landry Masonry Services Static Site Generator
+This is a freelance project by [Dylan Landry](https://www.dylanlandry.com) to create a website for Landry Masonry Services. The website is a client facing site with service benefits, contact information, and a gallery showcasing the company's past work.
 
 This project is part of Dylan Landry's portfolio, and the code can be found on the [project's GitHub repository](https://github.com/dyllandry/white-horse-masonry-services).
 
-![A screen shot of the white horse masonry website home page.](screen-shot.png)
-![A screen shot of the white horse masonry website galleryq page.](screen-shot-gallery.png)
+![A screen shot of the Landry masonry website home page.](screen-shot.png)
+![A screen shot of the Landry masonry website galleryq page.](screen-shot-gallery.png)
 
 ## Install
 
